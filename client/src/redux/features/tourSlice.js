@@ -6,7 +6,7 @@ export const createTour = createAsyncThunk(
   async ({ updatedTourData, navigate, toast }, { rejectWithValue }) => {
     try {
       const response = await api.createTour(updatedTourData);
-      toast.success("Tour Added Successfully");
+      toast.success("Topic Added Successfully");
       navigate("/");
       return response.data;
     } catch (err) {
@@ -68,7 +68,7 @@ export const deleteTour = createAsyncThunk(
   async ({ id, toast }, { rejectWithValue }) => {
     try {
       const response = await api.deleteTour(id);
-      toast.success("Tour Deleted Successfully");
+      toast.success("Topic Deleted Successfully");
       return response.data;
     } catch (err) {
       return rejectWithValue(err.response.data);
@@ -81,7 +81,7 @@ export const updateTour = createAsyncThunk(
   async ({ id, updatedTourData, toast, navigate }, { rejectWithValue }) => {
     try {
       const response = await api.updateTour(updatedTourData, id);
-      toast.success("Tour Updated Successfully");
+      toast.success("Topic Updated Successfully");
       navigate("/");
       return response.data;
     } catch (err) {

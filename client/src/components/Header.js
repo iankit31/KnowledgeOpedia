@@ -53,7 +53,7 @@ const Header = () => {
           href="/"
           style={{ color: "#606080", fontWeight: "600", fontSize: "22px" }}
         >
-          Touropedia
+          Knowledgeopedia
         </MDBNavbarBrand>
         <MDBNavbarToggler
           type="button"
@@ -80,7 +80,7 @@ const Header = () => {
               <>
                 <MDBNavbarItem>
                   <MDBNavbarLink href="/addTour">
-                    <p className="header-text">Add Tour</p>
+                    <p className="header-text">Add Topic</p>
                   </MDBNavbarLink>
                 </MDBNavbarItem>
                 <MDBNavbarItem>
@@ -110,7 +110,7 @@ const Header = () => {
             <input
               type="text"
               className="form-control"
-              placeholder="Search Tour"
+              placeholder="Search Topic"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
